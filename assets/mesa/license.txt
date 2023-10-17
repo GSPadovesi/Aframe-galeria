@@ -1,0 +1,11 @@
+Model Information:
+* title:	mesa
+* source:	https://sketchfab.com/3d-models/mesa-f57b06c9d32648b9830a77c0925cf4d5
+* author:	ultracarlos (https://sketchfab.com/ultracarlos)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "mesa" (https://sketchfab.com/3d-models/mesa-f57b06c9d32648b9830a77c0925cf4d5) by ultracarlos (https://sketchfab.com/ultracarlos) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
