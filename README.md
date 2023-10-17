@@ -25,6 +25,8 @@ O principal objetivo deste projeto é demonstrar a capacidade do A-Frame em cria
  
  ## Tecnologia utilizadas
  * Aframe
+ * HTML5
+ * CSS3
  * Javascript
 
 ## Acessar objetos 3D e botões
