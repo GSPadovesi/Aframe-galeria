@@ -18,7 +18,8 @@ O principal objetivo deste projeto é demonstrar a capacidade do A-Frame em cria
     git clone https://github.com/GSPadovesi/Aframe-galeria.git
   ```
 * 3 - Na pagina index selecione o botão "Go Live" localizado no canto inferior direito de seu visual code
-    ![image](https://github.com/GSPadovesi/Aframe-galeria/assets/73147378/0f3b1fcc-974b-4733-a677-27229ec86d59)
+   ![image](https://github.com/GSPadovesi/Aframe-galeria/assets/73147378/8b1080fd-2c59-4bc3-b00c-9c8683868927)
+
 * 4 - Assim você sera recarregado pra pagina inicial do projeto
   ![image](https://github.com/GSPadovesi/Aframe-galeria/assets/73147378/2841bc9b-9c65-4c33-80ef-82a897a97683)
  
