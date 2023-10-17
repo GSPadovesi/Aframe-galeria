@@ -1,0 +1,11 @@
+Model Information:
+* title:	Cabaña - Chameleon`s Path
+* source:	https://sketchfab.com/3d-models/cabana-chameleons-path-47b40bf696424b5087aae4f90f091657
+* author:	Bruno_Urra (https://sketchfab.com/Bruno_Urra)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Cabaña - Chameleon`s Path" (https://sketchfab.com/3d-models/cabana-chameleons-path-47b40bf696424b5087aae4f90f091657) by Bruno_Urra (https://sketchfab.com/Bruno_Urra) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
