@@ -1,0 +1,121 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-star-system-component@1.0.0/index.js"></script>
+    <script src="https://unpkg.com/aframe-animation-component@^5.1.2/dist/aframe-animation-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-orbit-controls@1.2.0/dist/aframe-orbit-controls.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
+    <title>Universo</title>
+  </head>
+
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="imagem" src="assets/sky.jpeg" />
+        <img id="sun" src="assets/sun.jpeg" />
+        <img id="mercury" src="assets/Mercury.jpg" crossorigin="anonymous"/>
+        <img id="venus" src="assets/venus.jpeg" crossorigin="anonymous"/>
+        <img id="earth" src="assets/terra.jpeg" crossorigin="anonymous"/>
+        <img id="moon" src="assets/moon.jpeg" crossorigin="anonymous"/>
+        <img id="mars" src="assets/mars.jpeg" crossorigin="anonymous"/>
+        <img id="jupiter" src="assets/jupiter.jpeg" crossorigin="anonymous"/>
+        <img id="saturn" src="assets/saturn.jpeg" crossorigin="anonymous"/>
+        <img id="saturn_ring" src="assets/satur_ring.png" crossorigin="anonymous"/>
+        <img id="uranus" src="assets/uranus.jpeg" crossorigin="anonymous"/>
+        <img id="neptune" src="assets/neptune.jpeg" crossorigin="anonymous"/> 
+        <img id="pluto" src="assets/plutao.jpg" crossorigin="anonymous">
+        <img id="meteoro" src="assets/meteor.jpeg" crossorigin="anonymous"/>
+        <img id="sky" src="assets/sky.jpeg" crossorigin="anonymous"/>
+
+        <a-mixin id="rotation" animation="property: rotation; loop: true; from:  0 0 0; to: 0 360 0; dur: 20000; easing: linear;"></a-mixin>
+        <a-mixin id="orbit" animation="property: rotation; loop: true; to: 0 360 0; dur: 40000; easing: linear;"></a-mixin>
+        <a-mixin id="orbit-moon" animation="property: rotation; loop: true; to: 360 0 0; dur: 10000; easing: linear;"></a-mixin>
+      </a-assets>
+
+      <a-sky src="#sky"></a-sky>
+
+
+      <!-- Camera -->
+      <a-entity camera look-controls orbit-controls="target: 0 1.6 -0.5;  initialPosition: -5 5 20;  autoRotate: true; autoRotateSpeed: 0.1; enablePan: false; minDistance:5;"></a-entity>
+
+
+      <a-entity geometry="primitive: torus; radius: 3; radiusTubular: 0.01;segmentsTubular: 50" material="color: #FFFFFF;opacity: 0.3" rotation="90 0 0" scale="2 2 0.1"></a-entity>
+      <a-entity geometry="primitive: torus; radius: 4.24; radiusTubular: 0.01;segmentsTubular: 50" material="color: #FFFFFF;opacity: 0.3"  rotation="90 0 0" scale="2 2 0.1"></a-entity>
+      <a-entity geometry="primitive: torus; radius: 5.24; radiusTubular: 0.01;segmentsTubular: 50" material="color: #FFFFFF;opacity: 0.3"  rotation="90 0 0" scale="2 2 0.1"></a-entity>
+      <a-entity geometry="primitive: torus; radius: 6.25; radiusTubular: 0.01;segmentsTubular: 50" material="color: #FFFFFF;opacity: 0.3"  rotation="90 0 0" scale="2 2 0.1"></a-entity>
+      <a-entity geometry="primitive: torus; radius: 12.1; radiusTubular: 0.01;segmentsTubular: 50" material="color: #FFFFFF;opacity: 0.3"  rotation="90 0 0" scale="2 2 0.1"></a-entity>
+      <a-entity geometry="primitive: torus; radius: 15.55; radiusTubular: 0.01;segmentsTubular: 50" material="color: #FFFFFF;opacity: 0.3" rotation="90 0 0" scale="2 2 0.1"></a-entity>
+      <a-entity geometry="primitive: torus; radius: 18.05; radiusTubular: 0.01;segmentsTubular: 50" material="color: #FFFFFF;opacity: 0.3" rotation="90 0 0" scale="2 2 0.1"></a-entity>
+      <a-entity geometry="primitive: torus; radius: 20.05; radiusTubular: 0.01;segmentsTubular: 50" material="color: #FFFFFF;opacity: 0.3" rotation="90 0 0" scale="2 2 0.1"></a-entity>
+      <a-entity geometry="primitive: torus; radius: 23.05; radiusTubular: 0.01;segmentsTubular: 50" material="color: #FFFFFF;opacity: 0.3" rotation="90 0 0" scale="2 2 0.1"></a-entity>
+
+      <!-- Planetas -->
+      <a-sphere id="sun" position="0 0 0" radius="4" src="#sun" mixin="rotation" material="shader: flat;"></a-sphere>
+
+      <!-- Entidades para os planetas rotacionar perante o sol --> 
+      <a-entity id="entity-mercury" mixin="orbit" animation="dur: 20000;">
+        <a-sphere id="mercury" position="0 0 6" radius=".4" src="#mercury" mixin="orbit"></a-sphere>
+      </a-entity>
+
+      <a-entity id="entity-venus" mixin="orbit" animation="dur: 25000">
+        <a-sphere id="venus" position="0 0 8.5" radius=".4" src="#venus" mixin="rotation"></a-sphere>
+      </a-entity>
+
+      <a-entity id="entity-earth" mixin="orbit" animation="dur: 30000;">
+        <a-sphere position="0 0 10.5" radius=".5" id="earth" src="#earth" mixin="rotation"></a-sphere>
+        <a-entity id="moon-" geometry="primitive: torus; radius: 1.5; radiusTubular: 0.01;segmentsTubular: 50" material="color: #FFFFFF;" rotation="-10 90 0" scale="1 1 0.1">
+          <a-sphere id="moon" src="#moon" radius=".4" mixin="orbit-moon"></a-sphere>
+        </a-entity>
+
+      </a-entity>
+
+      <a-entity id="entity-mars" mixin="orbit" animation="35000">
+        <a-sphere id="mars" position="0 0 12.5" radius=".4" src="#mars" mixin="rotation"></a-sphere>
+      </a-entity>
+
+      <a-entity id="entity-jupiter" mixin="orbit" animation="dur: 90000;">
+        <a-sphere id="jupiter" position="0 0 24" radius="2.5" src="#jupiter" mixin="rotation"></a-sphere>
+      </a-entity>
+     
+
+      <a-entity id="entity-saturn" mixin="orbit">
+        <a-entity position="0 0 31">
+          <a-sphere radius="1.8" id="saturn" src="#saturn-texture" mixin="rotation"></a-sphere>
+          <a-entity id="saturn-ring-1" geometry="primitive: torus; radius: 3.2; radiusTubular: 0.1;segmentsTubular: 50" material="color: #57524A;" rotation="90 0 0" scale="1 1 0.1"></a-entity>
+          <a-entity id="saturn-ring-2" geometry="primitive: torus; radius: 2.4; radiusTubular: 0.2;segmentsTubular: 50" material="color: #A29A87;" rotation="90 0 0" scale="1 1 0.1"></a-entity>
+        </a-entity>
+      </a-entity>
+
+      
+      <a-entity id="orbit-uranus" mixin="orbit" animation="dur: 70000;">
+        <a-entity position="0 0 36">
+          <a-sphere id="uranus" radius=".75" src="#uranus" mixin="rotation"></a-sphere>
+          <a-entity id="uranus-ring" geometry="primitive: torus; radius: 1.5; radiusTubular: 0.01;segmentsTubular: 50" material="color: #FFFFFF;" rotation="-10 90 0" scale="1 1 0.1"></a-entity>
+        </a-entity>
+      </a-entity>
+
+      <a-entity id="orbit-neptune" mixin="orbit" animation="dur: 35000;">
+        <a-entity position="0 0 40">
+          <a-sphere id="neptune" radius="1" src="#neptune-texture" mixin="rotation"></a-sphere>
+          <a-entity id="neptune-ring-1" geometry="primitive: torus; radius: 2; radiusTubular: 0.01;segmentsTubular: 50" material="color: #FFFFFF;opacity: 0.8" rotation="90 0 0" scale="1 1 0.1"></a-entity>
+          <a-entity id="neptune-ring-2" geometry="primitive: torus; radius: 1.7; radiusTubular: 0.05;segmentsTubular: 50" material="color: #FFFFFF;opacity: 0.8" rotation="90 0 0" scale="1 1 0.1"></a-entity>
+          <a-entity id="neptune-ring-3" geometry="primitive: torus; radius: 1.3; radiusTubular: 0.01;segmentsTubular: 50" material="color: #FFFFFF;opacity: 0.8" rotation="90 0 0" scale="1 1 0.1"></a-entity>
+        </a-entity>
+      </a-entity>
+
+      <a-entity id="entity-pluto" mixin="orbit" animation="dur: 80000;">
+        <a-sphere id="pluto" position="0 0 46" radius=".4" src="#pluto" mixin="rotation"></a-sphere>
+      </a-entity>
+
+    </a-scene>
+    
+    <div id="retornArea">
+      <a href="index.html">
+        <button class="buttonReturn">
+          <img src="assets/return.png" alt="Retornar main">
+        </button>
+      </a>
+    </div>
+
+  </body>
+</html>

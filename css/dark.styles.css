@@ -1,0 +1,40 @@
+.dark #info{
+  background-color: #363238;
+  border: 1px solid #fff;
+}
+
+.dark #acess{
+  background-color: #363238;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.dark #modal{
+  background-color: #363238;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.dark #title{
+  color: #fff;
+}
+
+.dark #closeModal{
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.dark #mode{
+  background-color: #363238;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.dark .moon{
+  display: block;
+  color: #fff;
+}
+
+.dark .sun{
+  display: none;
+}
