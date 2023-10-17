@@ -13,7 +13,7 @@ O principal objetivo deste projeto é demonstrar a capacidade do A-Frame em cria
 ## Como executar 
 * 1 - Tenha em seu visual code a extenção live server instalada
   ![image](https://github.com/GSPadovesi/Aframe-galeria/assets/73147378/81f77304-b57e-4632-aa01-795caef7769a)
-* 2 - Clone o projeto
+* 2 - Clone o projeto e acesse a pasta pelo visual code
   ```bash
     git clone https://github.com/GSPadovesi/Aframe-galeria.git
   ```
@@ -26,5 +26,19 @@ O principal objetivo deste projeto é demonstrar a capacidade do A-Frame em cria
  * Aframe
  * Javascript
 
-   
+## Acessar objetos 3D e botões
+  * 1 - Ande até o faixo de luz em frente do objeto desejado
+      ![image](https://github.com/GSPadovesi/Aframe-galeria/assets/73147378/a21b4f78-066b-4cb5-9908-bbecbbdf6969)
+  * 2 - Em seguida ira aparecer dois botões, o circular localizado no canto inferior esquerdo ira abrir um modal explicativo sobre o objeto. ja o botão central ira leva-lo para o objeto em questão
+      ![image](https://github.com/GSPadovesi/Aframe-galeria/assets/73147378/5005927d-3925-4a81-b3ac-dc0815eaf14b)
+    
+  * 3 - Ja o botão no canto superior direito serve para alterar para o dark mode.
+      ![image](https://github.com/GSPadovesi/Aframe-galeria/assets/73147378/bc25e945-d348-4fb3-adad-c65181dd4214)
+
+## Autor
+### Gabriel Santana Padovesi 
+
+## Liçenca 
+Este projeto é distribuído sob a licença MIT, que você pode encontrar no arquivo LICENSE deste repositório.
+
 
