@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <a-scene>
+    <a-scene vr-mode-ui="enabled: false;">
       <a-assets>
         <img id="imagem" src="../assets/sky.jpeg" />
         <img id="sun" src="../assets/sun.jpeg" />
@@ -36,7 +36,7 @@
 
 
       <!-- Camera -->
-      <a-entity camera look-controls orbit-controls="target: 0 1.6 -0.5;  initialPosition: -5 5 20;  autoRotate: true; autoRotateSpeed: 0.1; enablePan: false; minDistance:5;"></a-entity>
+      <a-entity camera look-controls orbit-controls="target: 0 1.6 -0.5;  initialPosition: -5 5 20; enablePan: false; minDistance:5; maxDistance: 65"></a-entity>
 
 
       <a-entity geometry="primitive: torus; radius: 3; radiusTubular: 0.01;segmentsTubular: 50" material="color: #FFFFFF;opacity: 0.3" rotation="90 0 0" scale="2 2 0.1"></a-entity>
