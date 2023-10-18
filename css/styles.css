@@ -175,3 +175,21 @@ input[type="checkbox"]{
     height: 10px;
   }
 }
+
+#title_universe{
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 20px;
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#title_universe.hide{
+  bottom: 0;
+  opacity: 0;
+}
