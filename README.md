@@ -38,6 +38,9 @@ O principal objetivo deste projeto é demonstrar a capacidade do A-Frame em cria
   * 3 - Ja o botão no canto superior direito serve para alterar para o dark mode.
       ![image](https://github.com/GSPadovesi/Aframe-galeria/assets/73147378/bc25e945-d348-4fb3-adad-c65181dd4214)
 
+## OBSERVAÇÃO 
+  O arquivo 'scene.bin' do objeto 3D macbook é maior que 100MB, por isso não subi o arquivo pro repositorio, porem na mesma pasta você ira encontrar uma pasta zipada com o arquivo dentro, apenas mova para a pasta mac. 
+
 ## Autor
 ### Gabriel Santana Padovesi 
 
