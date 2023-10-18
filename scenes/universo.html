@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    <a-scene vr-mode-ui="enabled: false;">
+    <a-scene vr-mode-ui="enabled: false;" >
       <a-assets>
         <img id="imagem" src="../assets/sky.jpeg" />
         <img id="sun" src="../assets/sun.jpeg" />
@@ -126,14 +126,14 @@
     <h1 id="title_universe" class="hide">Planeta terra</h1>
 
     <!-- Button modal -->
-    <button id="acess" class="modal-acess">Saiba mais</button>
+    <button id="acess" class="modal-acess" person-events-component>Saiba mais</button>
 
     <!-- Modal -->
-    <div id="container-universe" class="hide">
+    <div id="container-universe" class="hide" person-events-component>
       <button id="closeModal" class="closeInfo">X</button>
       <h1 class="title-universe">Planetas</h1>
       <div class="container-card">
-        
+
       </div>
     </div>
   </body>

@@ -66,5 +66,5 @@ AFRAME.registerComponent('person-events-component', {
     this.el.addEventListener('areaLeave', () => {
       acess.removeAttribute('href');
     })
-  }
+  },
 }) 
