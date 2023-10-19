@@ -2,8 +2,10 @@ window.addEventListener('load', openUniverse);
 
 function toggleUniverse(){
   const universe = document.querySelector('#container-universe');
-  universe.classList.toggle('hide');
+  const fade = document.getElementById('faden');
 
+  universe.classList.toggle('hide');
+  fade.classList.toggle('hide');
 }
 
 

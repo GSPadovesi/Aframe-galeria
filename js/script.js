@@ -35,10 +35,17 @@ AFRAME.registerComponent('person-events-component', {
   openModal: function () {
     const button = document.getElementById('info');
     const modal = document.getElementById('modal');
+    const fade = document.getElementById('faden');
     const close = document.getElementById('closeModal');
 
-    button.addEventListener('click', () => { modal.classList.remove('hide') });
-    close.addEventListener('click', () => { modal.classList.add('hide');  });
+    button.addEventListener('click', () => { 
+      modal.classList.remove('hide'); 
+      fade.classList.remove('hide');
+    });
+    close.addEventListener('click', () => { 
+      modal.classList.add('hide');
+      fade.classList.add('hide');  
+    });
   },
 
   informationModal: function(){
