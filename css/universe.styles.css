@@ -96,35 +96,14 @@
   color: #000;
 }
 
-
-
-
-
-
-/* .caixa{
-  width: 60vw;
-  height: 12rem;
-  background-color: grey;
-  margin: 4rem auto 0 auto;
-  border: 1px solid #000;
-  display: flex;
-  overflow-x: auto;
-}
-*/
-
-.caixa{
-  min-width: 12rem;
-  max-height: 12rem;
-  background-color: red;
-  border: 1px solid #000;
-  margin-left: 2rem;
-
+::-webkit-scrollbar-track {
+  display: none;
 }
 
-.caixa p{
-  margin-top: 40%;
-  margin-left: 40%;
-  text-align: center;
-  font: bold 2rem sans-serif;
-  color: #fff;
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  display: none;
 } 
