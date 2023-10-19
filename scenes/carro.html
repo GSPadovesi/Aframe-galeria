@@ -27,8 +27,8 @@
           enableDamping: true;
           dampingFactor: 0.125;
           rotateSpeed:0.25;
-          minDistance:5;
-          maxDistance:15;
+          minDistance:15;
+          maxDistance:20;
           maxPolarAngle: 1.5708;
           enablePan: false;
           autoRotate: true;
@@ -39,11 +39,11 @@
       </a-entity>
       
       <a-entity id="target">
-        <a-gltf-model id="bmw" class="carro" src="#carro" position="-1 1.60 0" scale="2 2 2">
+        <a-gltf-model id="bmw" class="carro" src="#carro" position="-2 1.60 0" scale="2 2 2">
         </a-gltf-model>
       </a-entity>
         
-      <a-plane src="#floor" shader="flat" position="0 -0.75 0" rotation="-90 0 0" scale="20 20 20"></a-plane>
+      <a-plane src="#floor" shader="flat" position="0 -0.75 0" rotation="-90 0 0" scale="40 40 40"></a-plane>
     </a-scene>
 
     <div id="retornArea">
